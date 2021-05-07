@@ -12,7 +12,8 @@ width: 45%;
 `
 const AreaMensagem = styled.div`
 display: flex;
-flex-direction: column-reverse;
+justify-content: flex-end;
+flex-direction: column;
 padding: 1rem;
 flex-grow: 1;
 `
@@ -56,7 +57,7 @@ class App extends React.Component {
         <AreaMensagem>
          {this.state.mensagens.map((mensagem, index) => {
            return <p>
-             {mensagem.nome}: {mensagem.mensagem}
+             <strong>{mensagem.nome}</strong>: {mensagem.mensagem}
            </p>
          })}
         </AreaMensagem>
