@@ -20,8 +20,6 @@ const AreaMensagem = styled.div`
   align-items: flex-start;
   padding: 1rem;
   flex: 1;
-  max-width: 50%;
-
   p {
     background: lightsteelblue;
     flex-wrap: wrap;
@@ -37,7 +35,7 @@ const AreaForm = styled.form`
   button {
     cursor: pointer;
     padding: 1rem;
-    margin: 0 auto;
+    margin: auto;
     background: transparent;
     border: 0;
     width: 3rem;
