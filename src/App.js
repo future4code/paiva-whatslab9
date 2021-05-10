@@ -24,6 +24,7 @@ const AreaMensagem = styled.div`
 
   p {
     background: lightsteelblue;
+    flex-wrap: wrap;
     border-radius: 0.5rem;
     padding: 5px;
   }
