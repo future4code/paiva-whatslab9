@@ -17,6 +17,7 @@ const AreaMensagem = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  align-items: flex-start;
   padding: 1rem;
   flex: 1;
   max-width: 50%;
