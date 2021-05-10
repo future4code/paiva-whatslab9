@@ -17,12 +17,12 @@ const AreaMensagem = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  align-items: flex-start;
   padding: 1rem;
   flex: 1;
-  max-width: 50%;
-
   p {
     background: lightsteelblue;
+    flex-wrap: wrap;
     border-radius: 0.5rem;
     padding: 5px;
   }
@@ -35,7 +35,7 @@ const AreaForm = styled.form`
   button {
     cursor: pointer;
     padding: 1rem;
-    margin: 0 auto;
+    margin: auto;
     background: transparent;
     border: 0;
     width: 3rem;
