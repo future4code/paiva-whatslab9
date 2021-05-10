@@ -67,15 +67,14 @@ class App extends React.Component {
     mensagemUsuario: ""
   };
 
-  doubleClickDeletar = (msgParaDeletar, index) => {
-    const listaMensagens = [...this.state.mensagens];
-
-    const mensagensFiltradas = listaMensagens.filter((mensagem) => {
-      return mensagem.mensagem !== msgParaDeletar;
-    });
-
-    this.setState({ mensagens: mensagensFiltradas });
-    alert("A mensagem foi deletada!");
+  doubleClickDeletar = (msgParaDeletar) => {
+    if (window.confirm("Tem certeza que deseja deletar essa mensagem?")) {
+      const listaMensagens = [...this.state.mensagens];
+      const mensagensFiltradas = listaMensagens.filter((mensagem) => {
+        return mensagem.mensagem !== msgParaDeletar;
+      });
+      this.setState({ mensagens: mensagensFiltradas });
+    }
   };
 
   onChangeNome = (event) => {
